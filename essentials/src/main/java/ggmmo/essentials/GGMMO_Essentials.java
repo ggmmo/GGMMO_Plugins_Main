@@ -1,6 +1,6 @@
 package ggmmo.essentials;
 
-import ggmmo.essentials.ggmmo.essentials.events.EventClass;
+import ggmmo.essentials.events.EventClass;
 import org.bukkit.ChatColor;
 import org.bukkit.Server;
 import org.bukkit.command.Command;

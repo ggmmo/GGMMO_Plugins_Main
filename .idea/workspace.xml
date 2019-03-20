@@ -2,12 +2,60 @@
 <project version="4">
   <component name="ArtifactsWorkspaceSettings">
     <artifacts-to-build>
-      <artifact name="essentials:jar" />
+      <artifact name="discordchat:jar" />
     </artifacts-to-build>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="585f2421-d7bb-4862-ae4a-111d3621ae2d" name="Default Changelist" comment="" />
+    <list default="true" id="585f2421-d7bb-4862-ae4a-111d3621ae2d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/discordchat_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordchat/discordchat.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordchat/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/GGMMO_DiscordChat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/events/DiscordChatListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordchat/src/main/resources/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/discordchat/src/main/resources/plugin.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/essentials/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/essentials/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/GGMMO_Essentials.java" beforeDir="false" afterPath="$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/GGMMO_Essentials.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/ggmmo/essentials/events/EventClass.java" beforeDir="false" afterPath="$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/events/EventClass.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/server.properties" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/server.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/usercache.json" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/usercache.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/data/villages.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/data/villages.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/playerdata/ff980a11-7feb-4aa6-a49e-111f8e704738.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/playerdata/ff980a11-7feb-4aa6-a49e-111f8e704738.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/region/r.1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world/stats/ff980a11-7feb-4aa6-a49e-111f8e704738.json" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world/stats/ff980a11-7feb-4aa6-a49e-111f8e704738.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/DIM-1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/data/villages_nether.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/data/villages_nether.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_nether/session.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.-1.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.-1.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.-1.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.-1.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.0.-1.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.0.-1.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.0.0.mca" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/DIM1/region/r.0.0.mca" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/data/villages_end.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/data/villages_end.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/level.dat" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/level.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/level.dat_old" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/level.dat_old" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/session.lock" beforeDir="false" afterPath="$PROJECT_DIR$/server_testing/_TestServer/world_the_end/session.lock" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/essentials/target/" />
+    <ignored path="$PROJECT_DIR$/essentials/discordchat/target/" />
+    <ignored path="$PROJECT_DIR$/discordchat/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,51 +63,45 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/essentials/pom.xml">
+        <entry file="file://$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/GGMMO_DiscordChat.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/GGMMO_Essentials.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="34">
-              <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
+            <state relative-caret-position="408">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#769#797#0" expanded="true" />
-                <element signature="e#844#858#0" expanded="true" />
-                <element signature="e#1004#1036#0" expanded="true" />
-                <element signature="e#4962#4994#0" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/essentials/src/main/resources/config.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/ggmmo/essentials/events/EventClass.java">
+        <entry file="file://$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/events/DiscordChatListener.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="377">
-              <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
+            <state relative-caret-position="275">
+              <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#236#237#0" expanded="true" />
-                <element signature="e#285#286#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/discordchat/src/main/resources/config.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/discordchat/src/main/resources/plugin.yml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
             </state>
           </provider>
         </entry>
@@ -79,12 +121,17 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/essentials/pom.xml" />
         <option value="$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/Main.java" />
         <option value="$PROJECT_DIR$/essentials/src/main/resources/plugin.yml" />
         <option value="$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/GGMMO_Essentials.java" />
         <option value="$PROJECT_DIR$/essentials/src/main/resources/config.yml" />
         <option value="$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/ggmmo/essentials/events/EventClass.java" />
+        <option value="$PROJECT_DIR$/essentials/pom.xml" />
+        <option value="$PROJECT_DIR$/discordchat/pom.xml" />
+        <option value="$PROJECT_DIR$/discordchat/src/main/resources/plugin.yml" />
+        <option value="$PROJECT_DIR$/discordchat/src/main/resources/config.yml" />
+        <option value="$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/GGMMO_DiscordChat.java" />
+        <option value="$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/events/DiscordChatListener.java" />
       </list>
     </option>
   </component>
@@ -114,49 +161,70 @@
           <expand>
             <path>
               <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="discordchat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="discordchat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="discordchat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="discordchat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="discordchat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
-              <item name="events" type="462c0819:PsiDirectoryNode" />
+              <item name="discordchat" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
-              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="discordchat" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GGMMO" type="b2602c69:ProjectViewProjectNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="essentials" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -165,7 +233,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553087386701" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1553095068852" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/server_testing/_TestServer/plugins" />
     <property name="project.structure.last.edited" value="Artifacts" />
@@ -200,19 +268,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="UI Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18017058" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="Messages" visible="true" weight="0.32917964" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32917964" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -220,45 +283,21 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Palette" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Maven" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
+      <window_info anchor="bottom" id="Version Control" order="9" />
+      <window_info active="true" anchor="bottom" id="Messages" order="10" visible="true" weight="0.32917964" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/essentials/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="28" column="41" selection-start-line="28" selection-start-column="41" selection-end-line="28" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/essentials/src/main/resources/plugin.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" column="28" selection-start-line="15" selection-start-column="28" selection-end-line="15" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/GGMMO_Essentials.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="78" column="21" lean-forward="true" selection-start-line="78" selection-start-column="21" selection-end-line="78" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#769#797#0" expanded="true" />
-            <element signature="e#844#858#0" expanded="true" />
-            <element signature="e#1004#1036#0" expanded="true" />
-            <element signature="e#4962#4994#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/essentials/src/main/resources/config.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
@@ -266,14 +305,77 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/ggmmo/essentials/events/EventClass.java">
+    <entry file="file://$PROJECT_DIR$/essentials/discordchat/pom.xml" />
+    <entry file="file://$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/events/EventClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="377">
+        <state relative-caret-position="248">
           <caret line="63" column="37" selection-start-line="63" selection-start-column="37" selection-end-line="63" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#236#237#0" expanded="true" />
             <element signature="e#285#286#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discordchat/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="26" column="21" lean-forward="true" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essentials/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="32" column="19" selection-start-line="32" selection-start-column="19" selection-end-line="32" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essentials/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="21" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/essentials/src/main/java/ggmmo/essentials/GGMMO_Essentials.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="30" column="8" selection-start-line="30" selection-start-column="8" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/GGMMO_DiscordChat.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discordchat/src/main/resources/config.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="24" selection-start-line="5" selection-start-column="24" selection-end-line="5" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discordchat/src/main/resources/plugin.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="23" selection-start-line="7" selection-start-column="23" selection-end-line="7" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/discordchat/src/main/java/ggmmo/discordchat/events/DiscordChatListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="275">
+          <caret line="61" column="36" lean-forward="true" selection-start-line="61" selection-start-column="36" selection-end-line="61" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -284,7 +386,7 @@
       <state key="ArtifactsStructureConfigurable.UI">
         <settings>
           <artifact-editor />
-          <last-edited>essentials:jar</last-edited>
+          <last-edited>discordchat:jar</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -332,7 +434,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
-          <last-edited>essentials</last-edited>
+          <last-edited>discordchat</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
