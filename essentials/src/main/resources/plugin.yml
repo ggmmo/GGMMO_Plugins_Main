@@ -13,7 +13,7 @@ commands:
   nameBlock:
     description: Rename a block the player is holding
     usage: /<command> <ItemName>
-    permission: ggmmo.rename
+    permission: ggmmo.essentials.rename
     permission-message: Insufficient permission
   SetPermissionGroup:
     description: Set the permission group for a specified player

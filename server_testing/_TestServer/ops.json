@@ -1,5 +1,11 @@
 [
   {
+    "uuid": "146bef54-0ad5-4651-b88b-6fc8cf584c2c",
+    "name": "The_Pale_One",
+    "level": 4,
+    "bypassesPlayerLimit": false
+  },
+  {
     "uuid": "176f4ecb-8a9c-4150-93fc-66fbea8e81ae",
     "name": "Dishonored_Fox",
     "level": 4,

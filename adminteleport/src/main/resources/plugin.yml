@@ -1,0 +1,17 @@
+name: AdminTeleports
+version: 1.0
+description: This plugin will handle many different teleporting funcitons such as initial spawns, warps, and portals.
+author: The_Pale_One
+authors:
+  - Intrepid249
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
+
+main: ggmmo.adminteleport.GGMMO_AdminTeleports
+
+commands:
+  setjoinspawn:
+    usage: /<command>
+    description: This will set the initial spawn point for player joining
+    permission: ggmmo.adminteleport.setjoinspawn
+    permission-message: Insufficient permission
+permissions:
