@@ -7,11 +7,15 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="discordchat" />
+        <module name="economy" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="8">
       <module name="discordchat" target="1.5" />
-      <module name="essentials" target="1.5" />
+      <module name="economy" target="1.5" />
+      <module name="essentials" target="8" />
+      <module name="makeop" target="8" />
+      <module name="playerheads" target="8" />
     </bytecodeTargetLevel>
   </component>
 </project>

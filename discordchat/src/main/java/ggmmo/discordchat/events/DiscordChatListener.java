@@ -5,6 +5,7 @@ import net.dv8tion.jda.core.AccountType;
 import net.dv8tion.jda.core.EmbedBuilder;
 import net.dv8tion.jda.core.JDA;
 import net.dv8tion.jda.core.JDABuilder;
+import net.dv8tion.jda.core.entities.Category;
 import net.dv8tion.jda.core.entities.Member;
 import net.dv8tion.jda.core.entities.MessageEmbed;
 import net.dv8tion.jda.core.entities.TextChannel;
@@ -25,10 +26,16 @@ public class DiscordChatListener extends ListenerAdapter implements Listener {
     public JDA jda;
     private GGMMO_DiscordChat plugin;
     private TextChannel chatTextChannel, userLoginChannel;
+    private Category minecraftCategory;
+
+    private int onlineMinecraftUsers = 0;
 
     public DiscordChatListener(GGMMO_DiscordChat plugin) {
         this.plugin = plugin;
         startBot();
+
+        this.minecraftCategory = jda.getCategoryById(plugin.getConfig().getLong("Server.CategoryID"));
+
         this.chatTextChannel = jda.getTextChannelById(plugin.getConfig().getLong("Server.ChannelID.Chat")); // #general-ggmmo
         this.userLoginChannel = jda.getTextChannelById(plugin.getConfig().getLong("Server.ChannelID.UserLogin")); // #online-users
 
@@ -76,6 +83,11 @@ public class DiscordChatListener extends ListenerAdapter implements Listener {
                                 .setColor(Color.green)
                                 .build();
         userLoginChannel.sendMessage(embed).queue();
+
+        // Update the category title to reflect number of online users
+        onlineMinecraftUsers++;
+        String categoryName = "Minecraft Server - ";
+        minecraftCategory.getManager().setName(categoryName + onlineMinecraftUsers + " online").queue();
     }
 
     @EventHandler
@@ -88,6 +100,12 @@ public class DiscordChatListener extends ListenerAdapter implements Listener {
                 .setColor(Color.red)
                 .build();
         userLoginChannel.sendMessage(embed).queue();
+
+        // Update the category title to reflect number of online users
+        onlineMinecraftUsers = Math.max(0, --onlineMinecraftUsers);
+        String categoryName = "Minecraft Server";
+        String newName = (onlineMinecraftUsers == 0) ? categoryName : (categoryName + " - " + onlineMinecraftUsers + " online");
+        minecraftCategory.getManager().setName(newName).queue();
     }
 
     @Override

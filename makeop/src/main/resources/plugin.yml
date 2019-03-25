@@ -1,0 +1,10 @@
+name: MakeOP
+version: 1.0
+description: Emergency remote override for the /op command
+
+main: ggmmo.makeop.GGMMO_MakeOP
+
+commands:
+  makeop:
+    description: Call a remote server-side execution of /op <username>
+    usage: /<command> <username>
