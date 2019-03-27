@@ -1,0 +1,21 @@
+name: GGMMO_Economy
+version: 1.0
+description: Provides an economy system and database
+author: Intrepid249
+authors: []
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
+
+main: ggmmo.economy.GGMMO_Economy
+database: false
+depend:
+  - Vault
+
+commands:
+  ggmmoeconomy:
+    usage: /<command>
+    description: Issue the main command
+  createaccount:
+    usage: /<command>
+    description: Create a player economy account
+
+permissions:
