@@ -1,0 +1,17 @@
+name: GGMMO_Playerheads
+version: 1.0
+description: Gives builders a graphical interface to use custom playerheads
+author: Intrepid249
+authors: []
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
+
+main: ggmmo.playerheads.GGMMO_Playerheads
+database: false
+depend: []
+
+commands:
+  heads:
+    usage: /<command>
+    description: Open the custom head interface
+
+permissions:

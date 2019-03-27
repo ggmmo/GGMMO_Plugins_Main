@@ -60,6 +60,7 @@ public class EventClass implements Listener {
     public void blockPlacement(BlockPlaceEvent event)  {
         Player player = event.getPlayer();
 
+        // If
         if (!player.hasPermission(new Permission("ggmmo.essentials.placeblock"))) {
             event.setCancelled(true);
         }
@@ -69,7 +70,7 @@ public class EventClass implements Listener {
     public void blockBreaking(BlockBreakEvent event) {
         Player player = event.getPlayer();
 
-        if (!player.hasPermission("ggmmo.essentials.breakblock ")) {
+        if (!player.hasPermission("ggmmo.essentials.breakblock")) {
             event.setCancelled(true);
         }
     }
