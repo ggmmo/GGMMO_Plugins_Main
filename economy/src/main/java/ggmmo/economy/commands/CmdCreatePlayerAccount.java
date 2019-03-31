@@ -1,7 +1,6 @@
 package ggmmo.economy.commands;
 
 import ggmmo.economy.GGMMO_Economy;
-import ggmmo.economy.utils.ISubCommand;
 import ggmmo.economy.utils.MessageManager;
 import ggmmo.economy.utils.PlayerManager;
 import org.bson.Document;
@@ -24,7 +23,7 @@ public class CmdCreatePlayerAccount implements CommandExecutor {
 //                }
 
                 Document doc = new Document("uuid", player.getUniqueId().toString());
-                if (plugin.mongoConnect.getPlayerDataCollection().find(doc).first() == null) { // If the user doesn't already exist
+                if (!plugin.economyCore.hasAccount(player.getUniqueId().toString())) { // If the user doesn't already exist
                     plugin.playerManagerHashMap.put(player.getUniqueId(), new PlayerManager(player.getUniqueId().toString(), 0, 0));
                     MessageManager.playerGood(player, "Your account has been created!");
                     return true;
@@ -41,15 +40,19 @@ public class CmdCreatePlayerAccount implements CommandExecutor {
 
         // If command was sent from console... or an admin creating an account for a user
         if (args[0] != null) {
+            // Player to create the account for
             Player targetPlayer = plugin.getServer().getPlayer(args[0]);
             if (targetPlayer != null) {
+                // If the player exists, set the Database UUID
                 Document doc = new Document("uuid", targetPlayer.getUniqueId().toString());
-                if (plugin.mongoConnect.getPlayerDataCollection().find(doc).first() == null) { // If the user doesn't already exist
+                // Make sure the user isn't already in the database
+                if (plugin.mongoConnect.getPlayerDataCollection().find(doc).first() == null) {
                     plugin.playerManagerHashMap.put(targetPlayer.getUniqueId(), new PlayerManager(targetPlayer.getUniqueId().toString(), 0, 0));
                     MessageManager.consoleGood("Account for " + targetPlayer.getDisplayName() + " has been created!");
                     if (sender instanceof Player)
                         MessageManager.playerGood((Player)sender,"Account for " + targetPlayer.getDisplayName() + " has been created!");
                 } else {
+                    // Give feedback message if player is already in the database
                     MessageManager.consoleBad("Account for " + targetPlayer.getDisplayName() + " already exists!");
                     if (sender instanceof Player)
                         MessageManager.playerBad((Player)sender, "Account for " + targetPlayer.getDisplayName() + " already exists!");
