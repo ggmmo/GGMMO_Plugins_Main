@@ -17,5 +17,17 @@ commands:
   createaccount:
     usage: /<command>
     description: Create a player economy account
+  balance:
+    usage: /<command>
+    description: Check your economy balance
+  pay:
+    usage: /<command> <player> <amount>
+    description: Pay another player some money
+  addBal:
+    usage: /<command> <player> <amount>
+    description: Add money to a player's account
+  subBal:
+    usage: /<command> <player> <amount>
+    description: Subtract money from a player's bank account. Type "/subBal <player> all" to clear a player's bank account
 
 permissions:
