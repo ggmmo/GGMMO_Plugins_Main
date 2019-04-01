@@ -1,6 +1,8 @@
 package ggmmo.adminteleport;
 
 import ggmmo.adminteleport.commands.CmdSetJoinSpawn;
+import ggmmo.adminteleport.commands.CmdSetWarp;
+import ggmmo.adminteleport.commands.CmdWarp;
 import ggmmo.adminteleport.events.EventJoinTeleport;
 import ggmmo.adminteleport.utils.MessageManager;
 import org.bukkit.ChatColor;
@@ -21,6 +23,8 @@ public class GGMMO_AdminTeleport extends JavaPlugin {
 
         // Register plugin commands
         getCommand("setjoinspawn").setExecutor(new CmdSetJoinSpawn());
+        getCommand("setwarp").setExecutor(new CmdSetWarp());
+        getCommand("warp").setExecutor(new CmdWarp());
 
         loadConfig();
     }

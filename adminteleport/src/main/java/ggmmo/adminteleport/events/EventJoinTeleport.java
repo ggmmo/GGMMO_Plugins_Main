@@ -25,7 +25,7 @@ public class EventJoinTeleport implements Listener {
         int z = config.getInt("joinspawn.z");
         int yaw = config.getInt("joinspawn.yaw");
         int pitch = config.getInt("joinspawn.pitch");
-        Location location = new Location(world, x, y, z, yaw, pitch);
+        Location location = new Location(world, x + 0.5f, y, z + 0.5f, yaw, pitch);
 
         player.teleport(location);
     }
