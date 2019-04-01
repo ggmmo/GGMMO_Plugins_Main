@@ -1,11 +1,13 @@
 package ggmmo.adminteleport.utils;
 
+import ggmmo.adminteleport.GGMMO_AdminTeleport;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.entity.Player;
 
 public class MessageManager {
-    private static String prefix = ChatColor.GRAY + "[GGMMO_Economy] " + ChatColor.RESET;
+    static GGMMO_AdminTeleport plugin = GGMMO_AdminTeleport.getPlugin();
+    private static String prefix = ChatColor.GRAY + String.format("[%s] ",plugin.getName()) + ChatColor.RESET;
 
     public static void consoleGood(String message) {
         Bukkit.getConsoleSender().sendMessage(prefix + ChatColor.GREEN + message);
