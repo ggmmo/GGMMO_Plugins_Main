@@ -25,3 +25,9 @@ hs_err_pid*
 # IntelliJ
 .idea/
 *.iml
+
+# Minecraft server
+server_testing/_TestServer/
+!server_testing/_TestServer/eula.txt
+!server_testing/_TestServer/craftbukkit-1.12.2.jar
+!server_testing/_TestServer/start.bat
