@@ -1,4 +1,4 @@
-package ggmmo.economy.utils;
+package ggmmo.adminteleport.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
