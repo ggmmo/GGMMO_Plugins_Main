@@ -13,6 +13,9 @@ import net.dv8tion.jda.core.events.message.guild.GuildMessageReceivedEvent;
 import net.dv8tion.jda.core.hooks.ListenerAdapter;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
+import org.bukkit.command.Command;
+import org.bukkit.command.CommandExecutor;
+import org.bukkit.command.CommandSender;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.AsyncPlayerChatEvent;
@@ -22,10 +25,10 @@ import org.bukkit.event.player.PlayerQuitEvent;
 import javax.security.auth.login.LoginException;
 import java.awt.*;
 
-public class DiscordChatListener extends ListenerAdapter implements Listener {
+public class DiscordChatListener extends ListenerAdapter implements Listener, CommandExecutor {
     public JDA jda;
     private GGMMO_DiscordChat plugin;
-    private TextChannel chatTextChannel, userLoginChannel;
+    private TextChannel chatTextChannel, userLoginChannel, commandTextChannel;
     private Category minecraftCategory;
 
     private int onlineMinecraftUsers = 0;
@@ -38,6 +41,7 @@ public class DiscordChatListener extends ListenerAdapter implements Listener {
 
         this.chatTextChannel = jda.getTextChannelById(plugin.getConfig().getLong("Server.ChannelID.Chat")); // #general-ggmmo
         this.userLoginChannel = jda.getTextChannelById(plugin.getConfig().getLong("Server.ChannelID.UserLogin")); // #online-users
+        this.commandTextChannel = jda.getTextChannelById(plugin.getConfig().getLong("Server.ChannelID.Commands")); // #bot-commands
 
         plugin.getServer().getPluginManager().registerEvents(this, plugin);
         jda.addEventListener(this);
@@ -58,6 +62,7 @@ public class DiscordChatListener extends ListenerAdapter implements Listener {
     }
 
     public void stopBot() {
+        minecraftCategory.getManager().setName("Minecraft Server").queue();
         jda.shutdown();
     }
 
@@ -110,18 +115,31 @@ public class DiscordChatListener extends ListenerAdapter implements Listener {
 
     @Override
     public void onGuildMessageReceived(GuildMessageReceivedEvent event) {
-        if (event.getAuthor().isBot() || event.getAuthor().isFake() || event.isWebhookMessage() || event.getChannel().compareTo(chatTextChannel) != 0) return;
+        if (event.getAuthor().isBot() || event.getAuthor().isFake() || event.isWebhookMessage()) return;
 
         String message = event.getMessage().getContentRaw();
-        // don't broadcast any tidy up commands that are executed in the listened channel
-        if (isBotPrefix(message)) return;
+        if (isBotPrefix(message)) {
+            // Only perform bot commands in #bot-commands
+            if (event.getChannel().compareTo(commandTextChannel) != 0) return;
 
-        Member user = event.getMember();
+            String[] args = event.getMessage().getContentRaw().split(" ");
 
-        Bukkit.broadcastMessage("<" + ChatColor.GOLD + user.getNickname() + "> " +  ChatColor.RESET + message);
+        } else {
+            // Broadcast chat only if regular messages are issued in the minecraft chat channel
+            if (event.getChannel().compareTo(chatTextChannel) != 0) return;
+
+            Member user = event.getMember();
+
+            Bukkit.broadcastMessage("<" + ChatColor.GOLD + user.getNickname() + ChatColor.RESET + "> " + message);
+        }
     }
 
     public boolean isBotPrefix(String string) {
         return (string.startsWith(plugin.getConfig().getString("Bot.Prefix")));
+    }
+
+    @Override
+    public boolean onCommand(CommandSender commandSender, Command command, String s, String[] strings) {
+        return true;
     }
 }
