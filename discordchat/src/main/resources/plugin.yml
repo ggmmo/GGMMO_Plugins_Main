@@ -1,5 +1,5 @@
 name: GGMMO_DiscordChat
-version: 1.0.1
+version: 1.1
 description: Plugin wrapper to allow discord chat integration with the minecraft server
 author: Intrepid249
 authors: []
@@ -10,5 +10,8 @@ database: false
 depend: []
 
 commands:
+  verify:
+    usage: /<command>
+    description: Verifies a discord linking procedure
 
 permissions:
