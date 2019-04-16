@@ -1,6 +1,9 @@
 name: MakeOP
 version: 1.0
 description: Emergency remote override for the /op command
+author: Intrepid249
+authors: []
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
 
 main: ggmmo.makeop.GGMMO_MakeOP
 

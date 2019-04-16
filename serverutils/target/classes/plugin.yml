@@ -1,0 +1,21 @@
+name: GGMMO_ServerUtils
+version: 1.0
+description: A collection of server utilities to make managing the server easier
+author: Intrepid249
+authors: []
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
+
+main: ggmmo.serverutils.GGMMO_ServerUtils
+
+commands:
+  ggdisable:
+    usage: /<command> <pluginname>
+    description: Disable a plugin according to the name
+  ggenable:
+    usage: /<command> <pluginname>
+    description: Enable a plugin according to the name
+  getuuid:
+    usage: /<command> <name>
+    description: Returns a player's uuid
+
+permissions:

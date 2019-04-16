@@ -8,6 +8,7 @@ import org.bukkit.entity.Player;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class GGMMO_MakeOP extends JavaPlugin implements CommandExecutor {
+
     @Override
     public void onEnable() {
 
