@@ -1,0 +1,17 @@
+name: GGMMO_NpcEditor
+version: 1.0
+description: Plugin that allows users to spawn custom NPCs
+author: Intrepid249
+authors: []
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
+
+main: ggmmo.npceditor.GGMMO_NpcEditor
+database: false
+depend: []
+
+commands:
+  npc:
+    usage: /<command> <create|select|remove>
+    description: Creates a custom npc at the player's position with the specified name
+
+permissions:
