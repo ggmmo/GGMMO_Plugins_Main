@@ -1,0 +1,15 @@
+name: Cinematics
+version: ${project.version}
+main: ggmmo.cinematics.Cinematics
+prefix: GGMMO_Cinematics
+authors: [Intrepid249, The_Pale_one]
+description: A bunch of commands, tools and integrations for making cinematics
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
+
+commands:
+  lightningWand:
+    usage: /<command>
+    description: Give the player a lightning wand
+  playtitle:
+    usage: /<command> <player> <message> [displayDuration] [fadeInTime] [fadeOutTime]
+    description: Show a title message to a player
