@@ -1,0 +1,12 @@
+name: GGMMO_NpcFactory
+version: ${project.version}
+main: ggmmo.npcfactory.NpcFactory
+depend: [GGMMO_ServerUtils]
+authors: [Intrepid249]
+description: A plugin full of NPC features
+website: https://github.com/ggmmo/GGMMO_Plugins_Main
+
+commands:
+  npcwand:
+    usage: /<command>
+    description: Gives the player the wand that is used to create and edit NPCs

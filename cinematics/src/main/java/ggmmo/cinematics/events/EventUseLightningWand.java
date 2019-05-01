@@ -15,8 +15,11 @@ public class EventUseLightningWand implements Listener {
         if (player.getInventory() != null) {
             if (player.getInventory().getItemInMainHand() != null) {
                 String itemName = player.getInventory().getItemInMainHand().getItemMeta().getDisplayName();
-                if (itemName != null && itemName.equals("Lightning Wand"))
+
+                if (itemName != null && itemName.equals("Lightning Wand")) {
                     world.strikeLightning(player.getTargetBlock(null, 50).getLocation());
+                }
+
             }
         }
     }
