@@ -33,6 +33,7 @@ public class CmdPlayTitle implements CommandExecutor {
 
                 message = args[1].replaceAll("_"," ");
 
+
                 PacketPlayOutTitle titlePacket = new PacketPlayOutTitle(EnumTitleAction.TITLE,
                         ChatSerializer.a("{\"text\":\"" + chatColor + message + "\"}"), fadeInTime, displayDuration, fadeOutTime);
 
