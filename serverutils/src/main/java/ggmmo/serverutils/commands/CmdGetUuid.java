@@ -8,8 +8,6 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 
-import java.util.UUID;
-
 public class CmdGetUuid implements CommandExecutor {
     private GGMMO_ServerUtils plugin = GGMMO_ServerUtils.getInstance();
 
